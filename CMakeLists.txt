@@ -8,4 +8,5 @@ add_executable(graphs src/main.cpp
         include/conversion_functions.h
         include/display_functions.h
         include/menu.h
+        include/save_list.h
 )

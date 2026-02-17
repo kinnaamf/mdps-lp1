@@ -61,7 +61,10 @@ inline void input_adjacency_list() {
     for (int i = 0; i < g_vertices; i++) {
         cout << "Enter adjacent vertices for vertex " << i << " (enter -1 to end): ";
         int neighbor;
-        while (cin >> neighbor && neighbor != -1) {
+
+        while (true) {
+            cin >> neighbor;
+            if (neighbor == -1) break;
             g_adjacency_list[i].push_back(neighbor);
         }
     }

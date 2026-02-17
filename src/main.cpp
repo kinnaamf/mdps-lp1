@@ -4,6 +4,7 @@
 #include "../include/conversion_functions.h"
 #include "../include/display_functions.h"
 #include "../include/menu.h"
+#include "../include/save_list.h"
 
 using namespace std;
 
@@ -61,6 +62,9 @@ void menu() {
                 break;
             case 10:
                 display_adjacency_list();
+                break;
+            case 11:
+                save_list();
                 break;
             case 0:
                 cout << "Exiting...\n";

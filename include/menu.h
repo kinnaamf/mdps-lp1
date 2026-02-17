@@ -33,6 +33,9 @@ inline void print_menu() {
     cout << "  9. Display incidence matrix\n";
     cout << "  10. Display adjacency list\n\n";
 
+    cout << "Save:\n";
+    cout << "  11. Save adjacency list\n\n\n";
+
     cout << "  0. Exit\n";
     print_line();
 }

@@ -1,9 +1,9 @@
 #include <iostream>
 #include <vector>
-#include "input_functions.h"
-#include "conversion_functions.h"
-#include "display_functions.h"
-#include "menu.h"
+#include "../include/input_functions.h"
+#include "../include/conversion_functions.h"
+#include "../include/display_functions.h"
+#include "../include/menu.h"
 
 using namespace std;
 

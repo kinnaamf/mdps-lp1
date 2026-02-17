@@ -17,6 +17,11 @@ extern int g_vertices;
 extern int g_edges;
 
 inline void display_adjacency_list_from_adjM() {
+    if (g_adjacency_matrix.empty()) {
+        cout << "First of all, enter adjacency matrix:\n\n";
+        input_adjacency_matrix();
+    }
+
     cout << "\nAdjacency List:\n";
     for (int i = 0; i < g_vertices; i++) {
         cout << i << " - ";
@@ -28,6 +33,11 @@ inline void display_adjacency_list_from_adjM() {
 }
 
 inline void display_adjacency_list_from_incM() {
+    if (g_incidence_matrix.empty()) {
+        cout << "First of all, enter incidence matrix:\n\n";
+        input_incidence_matrix();
+    }
+
     cout << "\nAdjacency List:\n";
     for (int i = 0; i < g_vertices; i++) {
         cout << i << " - ";
@@ -39,7 +49,10 @@ inline void display_adjacency_list_from_incM() {
 }
 
 inline void display_incidence_matrix() {
-    list_to_incidence_matrix();
+    if (g_incidence_matrix.empty()) {
+        cout << "First of all, enter incidence matrix:\n\n";
+        input_incidence_matrix();
+    }
 
     cout << "\nIncidence Matrix:\n";
     cout << "\t";
@@ -58,6 +71,11 @@ inline void display_incidence_matrix() {
 }
 
 inline void display_adjacency_matrix() {
+    if (g_adjacency_matrix.empty()) {
+        cout << "First of all, enter adjacency matrix:\n\n";
+        input_adjacency_matrix();
+    }
+
     cout << "\nAdjacency Matrix:\n";
 
     list_to_adjacency_matrix();
@@ -81,6 +99,11 @@ inline void display_adjacency_matrix() {
 }
 
 inline void display_adjacency_list() {
+    if (g_adjacency_list.empty()) {
+        cout << "\nFirst of all, enter adjacency list!\n\n";
+        input_adjacency_list();
+    }
+
     cout << "\nAdjacency List:\n";
 
     for (int i = 0; i < g_vertices; i++) {

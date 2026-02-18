@@ -6,7 +6,6 @@
 #define GRAPHS_MENU_H
 
 #include <iostream>
-#include <cstring>
 
 inline void print_line() {
     cout << string(75, '-') << '\n';

@@ -1,7 +1,3 @@
-//
-// Created by dimoje on 17.02.2026.
-//
-
 #ifndef GRAPHS_CONVERSION_FUNCTIONS_H
 #define GRAPHS_CONVERSION_FUNCTIONS_H
 
@@ -27,7 +23,8 @@ inline void list_to_adjacency_matrix() {
 
     for (int i = 0; i < g_vertices; i++) {
         for (int j = 0; j < g_adjacency_list[i].size(); j++) {
-            int vertex = g_adjacency_list[i][j] - 1;
+            int vertex = g_adjacency_list[i][j];
+
             g_adjacency_matrix[i][vertex] = 1;
         }
     }
@@ -93,7 +90,7 @@ inline void incidence_matrix_to_list() {
 
     for (int e = 0; e < g_edges; e++) {
         int from = -1;
-        int to = -1;
+        int to = 1;
 
         for (int v = 0; v < g_vertices; v++) {
             if (g_incidence_matrix[e][v] == -1) {

@@ -1,6 +1,3 @@
-//
-// Created by dimoje on 17.02.2026.
-//
 #ifndef GRAPHS_INPUT_FUNCTIONS_H
 #define GRAPHS_INPUT_FUNCTIONS_H
 

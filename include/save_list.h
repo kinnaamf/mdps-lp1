@@ -1,7 +1,3 @@
-//
-// Created by dimoje on 18.02.2026.
-//
-
 #ifndef GRAPHS_SAVE_LIST_H
 #define GRAPHS_SAVE_LIST_H
 

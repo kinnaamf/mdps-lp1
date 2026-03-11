@@ -1,7 +1,3 @@
-//
-// Created by dimoje on 17.02.2026.
-//
-
 #ifndef GRAPHS_DISPLAY_FUNCTIONS_H
 #define GRAPHS_DISPLAY_FUNCTIONS_H
 
@@ -78,8 +74,6 @@ inline void display_adjacency_matrix() {
 
     cout << "\nAdjacency Matrix:\n";
 
-    list_to_adjacency_matrix();
-
     cout << "\n";
 
     for (int i = 0; i < g_vertices; i++) {
@@ -110,7 +104,6 @@ inline void display_adjacency_list() {
         cout << i << " - ";
         for (int j = 0; j < g_adjacency_list[i].size(); j++) {
             cout << g_adjacency_list[i][j] << ", ";
-
         }
         cout << "-1\n";
     }

@@ -8,9 +8,9 @@
 
 using namespace std;
 
-vector<vector<int> > g_adjacency_matrix;
-vector<vector<int> > g_incidence_matrix;
-vector<vector<int> > g_adjacency_list;
+vector<vector<int>> g_adjacency_matrix;
+vector<vector<int>> g_incidence_matrix;
+vector<vector<int>> g_adjacency_list;
 
 int g_vertices = 0;
 int g_edges = 0;
@@ -45,6 +45,7 @@ void menu() {
                 display_adjacency_list_from_incM();
                 break;
             case 6:
+                // printf("ASdasdsad");
                 list_to_adjacency_matrix();
                 display_adjacency_list();
                 display_adjacency_matrix();

@@ -1,7 +1,3 @@
-//
-// Created by dimoje on 17.02.2026.
-//
-
 #ifndef GRAPHS_MENU_H
 #define GRAPHS_MENU_H
 
